@@ -1,0 +1,7 @@
+[package]
+name = "slack-picture-converter"
+version = "0.1.0"
+authors = ["muraoka"]
+
+[dependencies]
+image = "*"
