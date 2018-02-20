@@ -4,6 +4,9 @@ use std::process::exit;
 use std::env;
 use std::cmp::min;
 
+const TONE:u32 = 4;
+const TONE_STEP:u32 = 256 / TONE;
+
 fn usage(args: &Vec<String>) {
     println!("{} {}\n", args[0], "[image-file] [tile-size]");
     exit(1);
@@ -32,7 +35,7 @@ fn mosaic(img: &image::RgbImage, x: u32, tile_x:u32, y: u32, tile_y: u32) -> (u3
     let g = sum_g / t2;
     let b = sum_b / t2;
 
-    return (r-r%16, g-g%16, b-b%16);
+    return (r-r%TONE_STEP, g-g%TONE_STEP, b-b%TONE_STEP);
 }
 
 fn main() {
@@ -51,7 +54,7 @@ fn main() {
         let mut x = 0;
         while x < rgb.width() {
             let (r, g, b) = mosaic(&rgb, x, min(tile_size, rgb.width()-x), y, min(tile_size, rgb.height()-y));
-            print!(":P{:<02X}{:<02X}{:<02X}:", r, g, b);
+            print!(":p{:<02x}{:<02x}{:<02x}:", r, g, b);
             x += tile_size;
         }
         println!("");
