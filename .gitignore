@@ -1,5 +1,5 @@
 *.swp
-*.png
+rsc/*.png
 
 /target/
 **/*.rs.bk
