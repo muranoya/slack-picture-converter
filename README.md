@@ -15,13 +15,17 @@
 3. Output copy and post to slack!
 
 ---
+
 - Original Image.
+
 ![original gogh](doc/org_gogh.jpg "original gogh")
 
 - Converted Image.
+
 ![converted gogh](doc/conv_gogh.png "converted gogh")
 
 - Slack message.
+
 ```
 :p404040::p404040::p404040::p404040::p404040::p004040::p004040::p404040::p404040::p404040::p004040::p000040::p004040::p000000::p000000::p000000::p404040::p404040::p404040::p404040::p000000::p404040::p404040::p404040::p404040::p404040::p404040::p404040::p404040:
 :p404040::p404040::p404040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p004040::p404040::p004040::p404040::p404040::p004040::p004040::p004040::p404040::p004040::p004040::p004040::p404040::p404040:
@@ -61,4 +65,5 @@
 ```
 
 - Custom Emoji List
+
 ![custom emoji list](doc/custom_emoji_list.png "custom emoji list")
